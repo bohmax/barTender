@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Yey consegna">
+    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Aggiustati bottoni cliccabili nell header">
+      <change afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/NavigationTender.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/tender-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/tender-components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/CommonStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/CommonStyles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tentativoGiangi" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,7 +94,8 @@
       <workItem from="1655137503760" duration="6595000" />
       <workItem from="1655235484384" duration="8547000" />
       <workItem from="1655322453975" duration="6879000" />
-      <workItem from="1655330826968" duration="807000" />
+      <workItem from="1655330826968" duration="4322000" />
+      <workItem from="1655365404350" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Risotto!">
       <created>1654241903972</created>
@@ -170,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655329302578</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Aggiustati bottoni cliccabili nell header">
+      <created>1655331661908</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655331661909</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +217,8 @@
     <MESSAGE value="Lagg         a" />
     <MESSAGE value="Sistema la barra" />
     <MESSAGE value="Yey consegna" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yey consegna" />
+    <MESSAGE value="Aggiustati bottoni cliccabili nell header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiustati bottoni cliccabili nell header" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

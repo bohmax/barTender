@@ -52,12 +52,29 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
         });
     }
 
+    const header = () => (
+        <View>
+            <Header
+                icon={getIcon(icon)}
+                navigation={navigation}
+                bgColor={'#ffcc8b'}
+                noGradient={!!noGradient}
+                alertFun={logOut}
+                animations={{ anim: animatedHeaderValue, height: H_MAX_HEIGHT}}
+                titolo={title}
+            />
+            <View style={{ padding: 10 }} />
+        </View>
+    )
+
     const cloneChild = (child, index) => {
         if (child && child.type && child.type.name ==='TenderScroll') {
-            return React.cloneElement(child, {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER })
+            return React.cloneElement(child,
+                {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER, title: title })
         }
         if (child && child.type && child.type.name === 'TenderFlatList')
-            return React.cloneElement(child, {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER })
+            return React.cloneElement(child,
+                {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER, title: title })
         // if (index === 0)
         //     return React.cloneElement(child, {style: {paddingTop: index === 0 ? H_MAX_HEIGHT + PADDING_TOP_HEADER : 0 }})
         return child
@@ -69,15 +86,7 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
             <SafeAreaView style={{ flex:0, backgroundColor: '#ffcc8b' }} />
             <StatusBar hidden={false} backgroundColor="#ffcc8b" />
             <View style={[commonStyles.AndroidHomeSafeArea,{backgroundColor: bgColor? bgColor:'#ffffff', overflow: "hidden"}]} >
-                <Header
-                    icon={getIcon(icon)}
-                    navigation={navigation}
-                    bgColor={'#ffcc8b'}
-                    noGradient={!!noGradient}
-                    alertFun={logOut}
-                    animations={{ anim: animatedHeaderValue, height: H_MAX_HEIGHT}}
-                    titolo={title}
-                />
+                {header()}
                 {recursiveChildrenMap(children, cloneChild)}
                 <AwesomeAlert
                     show={alert}

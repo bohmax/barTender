@@ -109,5 +109,17 @@ export default StyleSheet.create({
         // shadowOffset: {width: 0, height: 5},
         // shadowRadius: 4,
         // shadowOpacity: 0.5
+    },
+    NavigatorTender: {
+        position: "absolute",
+        left: 0,
+        right: 0,
+        top: 0,
+        width: "100%",
+        zIndex: 998,
+        // elevation: 20,
+        // shadowOffset: {width: 0, height: 5},
+        // shadowRadius: 4,
+        // shadowOpacity: 0.5
     }
 });
