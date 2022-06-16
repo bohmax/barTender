@@ -6,7 +6,7 @@ import AwesomeAlert from "react-native-awesome-alerts";
 import {TenderScroll} from "./TenderScroll";
 import {TenderFlatList} from "./TenderFlatList";
 import BannerTender from "./BannerTender";
-
+import TopNavigationTender from "./TopNavigationTender";
 
 // A quanto pare children è una parola speciale che indica proprio i figli
 const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title }) => {
@@ -27,7 +27,8 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
         return {
             scroll: animatedHeaderValue,
             header_height:H_MAX_HEIGHT + PADDING_TOP_HEADER,
-            header: header()
+            header: header(),
+            title: title
         }
     }
 
@@ -77,11 +78,11 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
 
     const header = () => (
         <BannerTender
-            icon={getIcon(icon)}
+            // icon={getIcon(icon)}
             navigation={navigation}
             //bgColor={'#ffcc8b'}
             noGradient={!!noGradient}
-            alertFun={logOut}
+            // alertFun={logOut}
             animations={{ anim: animatedHeaderValue, height: H_MAX_HEIGHT}}
             titolo={title}
         />
@@ -91,7 +92,13 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
     return (
         <View style={{flex:1, backgroundColor: '#ffffff' }}>
             <SafeAreaView style={{ flex:0, backgroundColor: '#ffcc8b'}} />
-            <StatusBar hidden={false} backgroundColor="#ffcc8b"/>
+            <TopNavigationTender title={title}
+                                 navigation={navigation}
+                                 scroll={{ anim: animatedHeaderValue, header_height: H_MAX_HEIGHT}}
+                                 height={10}
+                                 icon={getIcon(icon)}
+                                 alertFun={logOut}
+            />
             <View style={[commonStyles.AndroidHomeSafeArea,{backgroundColor: bgColor? bgColor:'#ffffff', overflow: "hidden"}]} >
                 {recursiveChildrenMap(children, cloneChild)}
                 <AwesomeAlert

@@ -13,7 +13,7 @@ import {TenderFragment, TenderScroll} from '../componenti/tender-components';
 const InitialSelectorScreen = ({route, navigation}) => {
     console.log("InitialSelectorScreen")
     return (
-        <TenderFragment icon={"logout"} navigation={navigation}>
+        <TenderFragment icon={"logout"} title={'Home'} navigation={navigation}>
             <TenderScroll>
                 <HomeButton
                     onPress={() => navigation.push('HomeScreenSelector')}

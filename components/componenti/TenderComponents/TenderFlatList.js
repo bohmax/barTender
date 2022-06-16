@@ -10,6 +10,7 @@ export const TenderFlatList = ({
     ListFooterComponent,
     footerPadding=15,
     header,
+    title,
     ...props
 }) => {
 

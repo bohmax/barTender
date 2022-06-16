@@ -10,6 +10,7 @@ import {TenderButton} from "./TenderComponents/TenderButton";
 import TenderFragment from "./TenderComponents/TenderFragment";
 import {TenderScroll} from "./TenderComponents/TenderScroll";
 import {TenderFlatList} from "./TenderComponents/TenderFlatList";
+import TopNavigationTender from "./TenderComponents/TopNavigationTender";
 
 export {
     BannerTender,
@@ -23,5 +24,6 @@ export {
     TenderButton,
     TenderFragment,
     TenderScroll,
-    TenderFlatList
+    TenderFlatList,
+    TopNavigationTender
 }

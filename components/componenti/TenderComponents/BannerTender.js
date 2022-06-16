@@ -1,11 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react'; //quasi sempre necessario
 import {Platform, View, ImageBackground, Animated, TouchableOpacity, Text, StyleSheet, StatusBar} from 'react-native'; // quasi sempre necessario anche se raramente servono tutti questi import
-import commonStyles from "../../../styles/CommonStyles";
 import {DrawerActions} from "@react-navigation/native";
 import {IconsButton} from "../../../dati/IconsButton";
 import {LinearGradient} from 'expo-linear-gradient';
-import {themeStyles} from "../../../styles/theme/ThemeStyles";
-
 
 const BannerTender = ({ icon, navigation, bgColor, alertFun, animations, noGradient=false, titolo=''}) => { //renderizza l'header header
     const [allScrolled, setAllScrolled] = useState(false)
@@ -168,6 +165,9 @@ const BannerTender = ({ icon, navigation, bgColor, alertFun, animations, noGradi
                 {/*{title(titolo)}*/}
                 {background()}
             </LinearGradient>
+            <View style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
+                <Text style={{ fontSize: 50, color: 'black', marginLeft: 20, marginBottom: 10}}>{titolo}</Text>
+            </View>
         </View>
     );
 }

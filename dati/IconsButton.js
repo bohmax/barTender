@@ -11,7 +11,7 @@ export const IconsButton =
                     style={{
                         width: 80,
                         height: 20,
-                        resizeMode: 'contain'
+                        resizeMode: 'contain',
                     }}
                 />
         },
