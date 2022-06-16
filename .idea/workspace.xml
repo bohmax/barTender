@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Risolto alcuni bug di giangi&#10;Inizio a creare un header diverso per provare a rendere i titoli carini">
-      <change afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TopNavigationTender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Screen/InitialSelectorScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Screen/InitialSelectorScreen.js" afterDir="false" />
+    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Inizia ad essere carino ma richiede ancora modifiche">
       <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/componenti/tender-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/tender-components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dati/IconsButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/dati/IconsButton.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <workItem from="1655330826968" duration="807000" />
       <workItem from="1655383760149" duration="476000" />
       <workItem from="1655399615344" duration="11671000" />
-      <workItem from="1655413388798" duration="6444000" />
+      <workItem from="1655413388798" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="Risotto!">
       <created>1654241903972</created>
@@ -212,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655413079290</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Inizia ad essere carino ma richiede ancora modifiche">
+      <created>1655420361820</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655420361820</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +256,8 @@
     <MESSAGE value="Dovrei aver fixato le cose peggiori... ma stavi rompendo di nuovo tutto" />
     <MESSAGE value="Fixato textInput" />
     <MESSAGE value="Risolto alcuni bug di giangi&#10;Inizio a creare un header diverso per provare a rendere i titoli carini" />
-    <option name="LAST_COMMIT_MESSAGE" value="Risolto alcuni bug di giangi&#10;Inizio a creare un header diverso per provare a rendere i titoli carini" />
+    <MESSAGE value="Inizia ad essere carino ma richiede ancora modifiche" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inizia ad essere carino ma richiede ancora modifiche" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -112,7 +112,7 @@ const BannerTender = ({ icon, navigation, bgColor, alertFun, animations, noGradi
                 source={require('../../../image/loghi/logoHome.png')}
                 style={animatedHeaderImage(animations?.anim)}
 
-                // resizeMode={'center'}
+                resizeMode={'center'}
             >
                 {/*{buttons()}*/}
             </Animated.Image>
