@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from "react"; //quasi sempre necessario
 import {View, Text, Image, TouchableOpacity, StyleSheet, Platform} from "react-native";
-import { Entypo } from "@expo/vector-icons";
 import commonStyles from "../../styles/CommonStyles";
 import { themeStyles } from "../../styles/theme/ThemeStyles"
 import SettingsInfo from "../../dati/SettingsInfo";
-import TenderButton from "./TenderComponents/TenderButton";
 import {LinearGradient} from 'expo-linear-gradient';
-import TenderAlert from "./TenderComponents/TenderAlert"
-import FafouriteButton from "./FavouriteButton";
 import {DrinksInfo, isDrinkCustom} from "../../dati/DrinksInfo";
 import {CartInfo, removeCartInfo, withdraw, getNextToWithdrawId, addCartInfo} from "../../dati/CartInfo";
+import FavouriteButton from "./FavouriteButton";
+import {TenderButton} from "./TenderComponents/TenderButton";
+import {TenderAlert} from "./TenderComponents/TenderAlert";
 
 
 
@@ -135,7 +134,7 @@ const DrinkSelection = ({ Drink_, availability, navigation }) => {
                
                 <View style={{ flex: 1, flexDirection: "row", alignContent: 'center', marginTop: 10, marginBottom: 5, }}>
                     {console.log(Drink.id)}
-                    {FafouriteButton(Drink.id)}
+                    {FavouriteButton(Drink.id)}
                     {availableButton()}
                 </View>
 

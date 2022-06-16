@@ -22,6 +22,15 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
     const hideAlert = () => {
         setAlert(false)
     };
+
+    const clonedScrollProps = () => {
+        return {
+            scroll: animatedHeaderValue,
+            header_height:H_MAX_HEIGHT + PADDING_TOP_HEADER,
+            header: header()
+        }
+    }
+
     const logOut = () => { // definizione funzione per il logout
         if (Platform.OS === 'web') { // controlla la piattaforma (web android ios)
             showAlert() // attiva l'AwesomeAllert per il web
@@ -57,14 +66,26 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
 
     const cloneChild = (child, index) => {
         if (child && child.type && child.type === TenderScroll) {
-            return React.cloneElement(child, {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER })
+            return React.cloneElement(child, clonedScrollProps())
         }
         if (child && child.type && child.type === TenderFlatList)
-            return React.cloneElement(child, {scroll: animatedHeaderValue, header_height: H_MAX_HEIGHT + PADDING_TOP_HEADER })
+            return React.cloneElement(child, clonedScrollProps())
         // if (index === 0)
         //     return React.cloneElement(child, {style: {paddingTop: index === 0 ? H_MAX_HEIGHT + PADDING_TOP_HEADER : 0 }})
         return child
     }
+
+    const header = () => (
+        <BannerTender
+            icon={getIcon(icon)}
+            navigation={navigation}
+            //bgColor={'#ffcc8b'}
+            noGradient={!!noGradient}
+            alertFun={logOut}
+            animations={{ anim: animatedHeaderValue, height: H_MAX_HEIGHT}}
+            titolo={title}
+        />
+    )
 
 
     return (
@@ -72,15 +93,6 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
             <SafeAreaView style={{ flex:0, backgroundColor: '#ffcc8b'}} />
             <StatusBar hidden={false} backgroundColor="#ffcc8b"/>
             <View style={[commonStyles.AndroidHomeSafeArea,{backgroundColor: bgColor? bgColor:'#ffffff', overflow: "hidden"}]} >
-                <BannerTender
-                    icon={getIcon(icon)}
-                    navigation={navigation}
-                    //bgColor={'#ffcc8b'}
-                    noGradient={!!noGradient}
-                    alertFun={logOut}
-                    animations={{ anim: animatedHeaderValue, height: H_MAX_HEIGHT}}
-                    titolo={title}
-                />
                 {recursiveChildrenMap(children, cloneChild)}
                 <AwesomeAlert
                     show={alert}

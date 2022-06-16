@@ -1,12 +1,11 @@
+import React from "react";
 import { View, TouchableOpacity, Text } from 'react-native';
 import {AppContext} from "../../../AppContext";
-import React, {useState} from "react";
-import { useContext } from 'react';
 import { themeStyles } from "../../../styles/theme/ThemeStyles"
 
 
 
-export default TenderButton = ({ testo, navigation, bar = "unknown", color = themeStyles.light.backgroundColor1, action = null }) => {
+export const TenderButton = ({ testo, navigation, bar = "unknown", color = themeStyles.light.backgroundColor1, action = null }) => {
     //const [bar, setBar] = useState('');
     
     //console.log("TenderButton")

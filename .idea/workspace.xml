@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Dovrei aver fixato le cose peggiori... ma stavi rompendo di nuovo tutto">
+    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="Fixato textInput">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Screen/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Screen/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/DrinkSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/DrinkSelection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderAlert.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderAlert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFlatList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/tender-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/tender-components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/CommonStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/styles/CommonStyles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tentativoGiangi" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -84,7 +97,8 @@
       <workItem from="1655235484384" duration="8547000" />
       <workItem from="1655322453975" duration="6879000" />
       <workItem from="1655330826968" duration="807000" />
-      <workItem from="1655383760149" duration="419000" />
+      <workItem from="1655383760149" duration="476000" />
+      <workItem from="1655399615344" duration="11332000" />
     </task>
     <task id="LOCAL-00001" summary="Risotto!">
       <created>1654241903972</created>
@@ -184,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655383678775</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixato textInput">
+      <created>1655384220123</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655384220123</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +216,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HeaderCarino2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -215,7 +248,8 @@
     <MESSAGE value="Yey consegna" />
     <MESSAGE value="yey funziona" />
     <MESSAGE value="Dovrei aver fixato le cose peggiori... ma stavi rompendo di nuovo tutto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dovrei aver fixato le cose peggiori... ma stavi rompendo di nuovo tutto" />
+    <MESSAGE value="Fixato textInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixato textInput" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

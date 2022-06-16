@@ -1,9 +1,8 @@
 import React, { Component, useState} from 'react';
 import { Text, StyleSheet, View, Modal, TouchableWithoutFeedback, Alert  } from 'react-native';
 import {themeStyles} from "../../../styles/theme/ThemeStyles"
-import Accordion from 'react-native-collapsible/Accordion';
 import { Entypo } from "@expo/vector-icons";
-import TenderButton from "./TenderButton";
+import {TenderButton} from "./TenderButton";
 
 
 /* necessario per essere chiamato 
@@ -28,7 +27,7 @@ import TenderButton from "./TenderButton";
  * @returns 
  */
 
-export default TenderAlert = (elements) =>{
+export const TenderAlert = (elements) =>{
 const cancelAlertBox = () => {
   elements.state(false);
 }

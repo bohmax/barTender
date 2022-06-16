@@ -99,15 +99,16 @@ export default StyleSheet.create({
         // borderWidth: 3,
     },
     HeaderTender: {
-        position: "absolute",
-        left: 0,
-        right: 0,
-        top: 0,
+        // position: "absolute",
+        // left: 0,
+        // right: 0,
+        // top: 0,
         width: "100%",
-        zIndex: 998,
+        // height: 150,
+        // zIndex: 998,
         // elevation: 20,
         // shadowOffset: {width: 0, height: 5},
         // shadowRadius: 4,
         // shadowOpacity: 0.5
-    }
+    },
 });
