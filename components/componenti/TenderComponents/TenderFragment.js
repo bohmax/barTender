@@ -95,7 +95,7 @@ const TenderFragment = ({children, icon,  navigation, noGradient, bgColor, title
             <TopNavigationTender title={title}
                                  navigation={navigation}
                                  scroll={{ anim: animatedHeaderValue, header_height: H_MAX_HEIGHT}}
-                                 height={10}
+                                 height={60}
                                  icon={getIcon(icon)}
                                  alertFun={logOut}
             />
@@ -135,7 +135,7 @@ const getIcon=(str)=>{
     else if(str === IconsButton.menu.name){ //name: 'menu',
         return IconsButton.logout
     }else if(str === IconsButton.none.name){ //name: 'none',
-        return IconsButton.logout
+        return IconsButton.none
     }
     //name: 'back',
     return IconsButton.back

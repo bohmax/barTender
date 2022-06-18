@@ -3,7 +3,7 @@ import {View, Text, TouchableOpacity, TextInput} from 'react-native';
 import commonStyles from "../../styles/CommonStyles";
 import BarsInfo from "../../dati/BarsInfo"
 import {IconsButton} from "../../dati/IconsButton";
-import {TenderFragment, TenderFlatList,   Location, BarSelection} from "../componenti/tender-components";
+import {TenderFragment, TenderFlatList, Location, BarSelection, TenderScroll} from "../componenti/tender-components";
 import { themeStyles } from "../../styles/theme/ThemeStyles"
 import { FontAwesome5 } from '@expo/vector-icons';
 
@@ -33,7 +33,7 @@ const Home = ({ navigation }) => { // funzione generatrice della schermata home
 
     const showLocation = () => {
         if (!showBars)
-            return (<Location animEnd={posizioneOttenuta} locationToSet={locationLoaded}/>)
+            return (<TenderScroll><Location animEnd={posizioneOttenuta} locationToSet={locationLoaded}/></TenderScroll>)
         return barList()
     }
 

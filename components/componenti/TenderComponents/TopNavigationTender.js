@@ -3,6 +3,7 @@ import {View, Text, StatusBar, TouchableOpacity, Platform} from "react-native";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 import {DrawerActions} from "@react-navigation/native";
 import {IconsButton} from "../../../dati/IconsButton";
+const margineAnticipato = Platform.OS === 'ios' ? {offset: -30, height: -50} : {offset: 25, height: 5}
 
 // https://www.youtube.com/watch?v=T9LWjpHCW_E
 const TopNavigationTender = ({ title, navigation, scroll, height, icon, alertFun }) => {
@@ -10,14 +11,13 @@ const TopNavigationTender = ({ title, navigation, scroll, height, icon, alertFun
     const safeArea = useSafeAreaInsets();
     const isFloating = !!scroll;
     const [isTransparent, setTransparent] = useState(isFloating);
-    const margineAnticipato = 10
 
     useEffect(() => {
         if (!scroll) {
             return;
         }
         const listenerId = anim.addListener(a => {
-            const topNaviOffset = header_height - height - safeArea.top - margineAnticipato;
+            const topNaviOffset = header_height - height - safeArea.top - margineAnticipato.offset;
             isTransparent !== a.value < topNaviOffset &&
             setTransparent(!isTransparent);
         });
@@ -25,9 +25,11 @@ const TopNavigationTender = ({ title, navigation, scroll, height, icon, alertFun
     });
 
     const buttons = () => (
-        <View>
+        <View style={{ marginTop: Platform.OS === 'web' ? 20 : 0}}>
             {showIcon(icon, navigation, alertFun)}
+            <View style={{marginTop: 10}}>
             {menuIconForWeb(icon, navigation, alertFun )}
+            </View>
         </View>
     )
 
@@ -53,9 +55,11 @@ const TopNavigationTender = ({ title, navigation, scroll, height, icon, alertFun
 
 const styles = {
     container: (safeArea, isFloating, height, isTransparent) => ({
-        // paddingTop: safeArea.top,
-        marginBottom: isFloating ? - height - safeArea.top : 0,
-        height: height + safeArea.top,
+        // safearea.top è 0 su android 44 su ios
+        // paddingTop: safeArea.top, // aggiunge altezza
+        marginBottom: isFloating ? - height - safeArea.top - margineAnticipato.height: 0, // se è trasparente tolgo safeArea e altezza per evitare di apere parti bianche
+        // height: height ,
+        height: margineAnticipato.height + height + safeArea.top, // senza safe area va tutto nella notch
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',

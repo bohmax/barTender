@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="better">
+    <list default="true" id="9f249733-763f-404d-89d4-83363781a8a5" name="Changes" comment="aggiusta la resize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Screen/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Screen/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/BannerTender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TenderFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/componenti/TenderComponents/TopNavigationTender.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/componenti/TenderComponents/TopNavigationTender.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/massimo/Documents/GitHub/barTender/components/componenti/TenderComponents&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/massimo/barTender",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/componenti/TenderComponents" />
@@ -92,7 +95,9 @@
       <workItem from="1655383760149" duration="476000" />
       <workItem from="1655399615344" duration="11671000" />
       <workItem from="1655413388798" duration="6650000" />
-      <workItem from="1655481442582" duration="2168000" />
+      <workItem from="1655481442582" duration="2181000" />
+      <workItem from="1655561362248" duration="912000" />
+      <workItem from="1655562677362" duration="4770000" />
     </task>
     <task id="LOCAL-00001" summary="Risotto!">
       <created>1654241903972</created>
@@ -220,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655420457497</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="aggiusta la resize">
+      <created>1655546406266</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655546406266</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +279,8 @@
     <MESSAGE value="Risolto alcuni bug di giangi&#10;Inizio a creare un header diverso per provare a rendere i titoli carini" />
     <MESSAGE value="Inizia ad essere carino ma richiede ancora modifiche" />
     <MESSAGE value="better" />
-    <option name="LAST_COMMIT_MESSAGE" value="better" />
+    <MESSAGE value="aggiusta la resize" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiusta la resize" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
