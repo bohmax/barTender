@@ -40,7 +40,7 @@ const DrinkMenu = ({route, navigation}) => {
             {/*<View style={styles.ViewInfo}>*/}
             {/*    <Text style={styles.FeedTestoVoto}>Menu: {selBarName}</Text>*/}
             {/*</View>*/}
-            <TenderScroll style={{marginTop: -15 }}>
+            <TenderScroll>
 
                 <DrinkCardTender title={"Tipo di Drink:"}>
                     <View>
@@ -69,7 +69,7 @@ export default DrinkMenu;
 
 
 function ListDrinkType(props) {
-    return <>{props.avaiableDrinkTypes.map(props.callbackfn)}</>;
+    return <View>{props.avaiableDrinkTypes.map(props.callbackfn)}</View>;
 }
 
 function ListDrinkAvailable(props) {
@@ -82,12 +82,12 @@ function ListDrinkAvailable(props) {
 }
 
 function ListUnavailableDrink(props) {
-    return <>
+    return <View>
         {props.unavailableDrinks.length > 0 && <Text style={[styles.FeedTestoVoto, themeStyles.unavailableColor]}>
             DRINK NON DISPONIBILI
         </Text>}
         {props.unavailableDrinks.map(props.callbackfn)}
-    </>;
+    </View>;
 }
 
 

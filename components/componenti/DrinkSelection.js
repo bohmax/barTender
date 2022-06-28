@@ -48,7 +48,6 @@ const DrinkSelection = ({ Drink_, availability, navigation }) => {
     const styleAviability = () => {
         if (availability) {
             return {
-                
                 borderWidth: 5,
                 borderColor: Drink.color,
                 borderRadius: 50,
@@ -57,7 +56,6 @@ const DrinkSelection = ({ Drink_, availability, navigation }) => {
             };
         }
         return {
-            
             borderWidth: 5,
             borderColor: themeStyles.unavailableColor.backgroundColor,
             borderRadius: 50,
